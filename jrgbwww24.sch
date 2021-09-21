@@ -1,0 +1,493 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L library:esp8266 U?
+U 1 1 614949A3
+P 2650 4400
+F 0 "U?" H 2625 5615 50  0000 C CNN
+F 1 "esp8266" H 2625 5524 50  0000 C CNN
+F 2 "" H 2650 4300 50  0001 C CNN
+F 3 "" H 2650 4300 50  0001 C CNN
+	1    2650 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 614A6CB2
+P 4150 2750
+F 0 "R?" V 3943 2750 50  0000 C CNN
+F 1 "R" V 4034 2750 50  0000 C CNN
+F 2 "" V 4080 2750 50  0001 C CNN
+F 3 "~" H 4150 2750 50  0001 C CNN
+	1    4150 2750
+	0    1    1    0   
+$EndComp
+$Comp
+L library:IPA040N06N Q?
+U 1 1 614BDD97
+P 5850 2750
+F 0 "Q?" H 6054 2796 50  0000 L CNN
+F 1 "IPA040N06N" H 6054 2705 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:TO-263-6" H 6050 2675 50  0001 L CIN
+F 3 "https://www.infineon.com/dgdl/Infineon-IPB180N10S4_02-DS-v01_00-en.pdf?fileId=db3a30433d1d0bbe013d2129cf8a2f88" V 5850 2750 50  0001 L CNN
+	1    5850 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Regulator_Linear:L7805 U?
+U 1 1 614BF9F0
+P 4900 5600
+F 0 "U?" H 4900 5749 50  0000 C CNN
+F 1 "L7805" H 4900 5840 50  0000 C CNN
+F 2 "" H 4925 5450 50  0001 L CIN
+F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b3/b0/12/d4/47/88/CD00000444.pdf/files/CD00000444.pdf/jcr:content/translations/en.CD00000444.pdf" H 4900 5550 50  0001 C CNN
+	1    4900 5600
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 614C231C
+P 5600 5250
+F 0 "C?" H 5715 5296 50  0000 L CNN
+F 1 "C" H 5715 5205 50  0000 L CNN
+F 2 "" H 5638 5100 50  0001 C CNN
+F 3 "~" H 5600 5250 50  0001 C CNN
+	1    5600 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 614C380E
+P 4250 5250
+F 0 "C?" H 4135 5204 50  0000 R CNN
+F 1 "C" H 4135 5295 50  0000 R CNN
+F 2 "" H 4288 5100 50  0001 C CNN
+F 3 "~" H 4250 5250 50  0001 C CNN
+	1    4250 5250
+	-1   0    0    1   
+$EndComp
+$Comp
+L library:Screw_Terminal_01x08 J?
+U 1 1 614D7B78
+P 7450 4150
+F 0 "J?" H 7530 4142 50  0000 L CNN
+F 1 "Screw_Terminal_01x08" H 7530 4051 50  0000 L CNN
+F 2 "" H 7450 4150 50  0001 C CNN
+F 3 "~" H 7450 4150 50  0001 C CNN
+	1    7450 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 5600 4250 5600
+Wire Wire Line
+	2050 5600 2050 4900
+Wire Wire Line
+	7250 4800 7250 4550
+Wire Wire Line
+	5200 5600 5600 5600
+Wire Wire Line
+	6550 5600 6550 4450
+Wire Wire Line
+	6550 4450 7250 4450
+Wire Wire Line
+	4900 5300 4900 5000
+Connection ~ 4900 4800
+Wire Wire Line
+	4250 5400 4250 5600
+Connection ~ 4250 5600
+Wire Wire Line
+	4250 5600 3550 5600
+Wire Wire Line
+	5600 5400 5600 5600
+Connection ~ 5600 5600
+Wire Wire Line
+	5600 5600 6300 5600
+Wire Wire Line
+	3200 4800 4900 4800
+Wire Wire Line
+	4250 5100 4250 5000
+Wire Wire Line
+	4250 5000 4900 5000
+Connection ~ 4900 5000
+Wire Wire Line
+	4900 5000 4900 4900
+Wire Wire Line
+	5600 5100 5600 4900
+Wire Wire Line
+	5600 4900 4900 4900
+Connection ~ 4900 4900
+Wire Wire Line
+	4900 4900 4900 4800
+Wire Wire Line
+	4900 4800 7000 4800
+Wire Wire Line
+	7000 4800 7000 4350
+Wire Wire Line
+	7000 4350 7250 4350
+Connection ~ 7000 4800
+Wire Wire Line
+	7000 4800 7250 4800
+Wire Wire Line
+	5650 2550 5650 2750
+Wire Wire Line
+	4300 2750 4500 2750
+Wire Wire Line
+	4500 2750 4500 2550
+$Comp
+L Device:R R?
+U 1 1 614F560F
+P 4150 2050
+F 0 "R?" V 3943 2050 50  0000 C CNN
+F 1 "R" V 4034 2050 50  0000 C CNN
+F 2 "" V 4080 2050 50  0001 C CNN
+F 3 "~" H 4150 2050 50  0001 C CNN
+	1    4150 2050
+	0    1    1    0   
+$EndComp
+$Comp
+L library:IPA040N06N Q?
+U 1 1 614F5769
+P 5850 2050
+F 0 "Q?" H 6054 2096 50  0000 L CNN
+F 1 "IPA040N06N" H 6054 2005 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:TO-263-6" H 6050 1975 50  0001 L CIN
+F 3 "https://www.infineon.com/dgdl/Infineon-IPB180N10S4_02-DS-v01_00-en.pdf?fileId=db3a30433d1d0bbe013d2129cf8a2f88" V 5850 2050 50  0001 L CNN
+	1    5850 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 1850 5650 2050
+Wire Wire Line
+	4300 2050 4500 2050
+Wire Wire Line
+	4500 2050 4500 1850
+$Comp
+L Device:R R?
+U 1 1 61500E1A
+P 4150 4100
+F 0 "R?" V 3943 4100 50  0000 C CNN
+F 1 "R" V 4034 4100 50  0000 C CNN
+F 2 "" V 4080 4100 50  0001 C CNN
+F 3 "~" H 4150 4100 50  0001 C CNN
+	1    4150 4100
+	0    1    1    0   
+$EndComp
+$Comp
+L library:IPA040N06N Q?
+U 1 1 61500FD2
+P 5850 4100
+F 0 "Q?" H 6054 4146 50  0000 L CNN
+F 1 "IPA040N06N" H 6054 4055 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:TO-263-6" H 6050 4025 50  0001 L CIN
+F 3 "https://www.infineon.com/dgdl/Infineon-IPB180N10S4_02-DS-v01_00-en.pdf?fileId=db3a30433d1d0bbe013d2129cf8a2f88" V 5850 4100 50  0001 L CNN
+	1    5850 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 3900 5650 4100
+Wire Wire Line
+	4300 4100 4500 4100
+Wire Wire Line
+	4500 4100 4500 3900
+$Comp
+L Device:R R?
+U 1 1 61500FE2
+P 4150 3400
+F 0 "R?" V 3943 3400 50  0000 C CNN
+F 1 "R" V 4034 3400 50  0000 C CNN
+F 2 "" V 4080 3400 50  0001 C CNN
+F 3 "~" H 4150 3400 50  0001 C CNN
+	1    4150 3400
+	0    1    1    0   
+$EndComp
+$Comp
+L library:IPA040N06N Q?
+U 1 1 61500FF6
+P 5850 3400
+F 0 "Q?" H 6054 3446 50  0000 L CNN
+F 1 "IPA040N06N" H 6054 3355 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:TO-263-6" H 6050 3325 50  0001 L CIN
+F 3 "https://www.infineon.com/dgdl/Infineon-IPB180N10S4_02-DS-v01_00-en.pdf?fileId=db3a30433d1d0bbe013d2129cf8a2f88" V 5850 3400 50  0001 L CNN
+	1    5850 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 3200 5650 3400
+Wire Wire Line
+	4300 3400 4500 3400
+Wire Wire Line
+	4500 3400 4500 3200
+$Comp
+L Device:R R?
+U 1 1 61515433
+P 4150 1350
+F 0 "R?" V 3943 1350 50  0000 C CNN
+F 1 "R" V 4034 1350 50  0000 C CNN
+F 2 "" V 4080 1350 50  0001 C CNN
+F 3 "~" H 4150 1350 50  0001 C CNN
+	1    4150 1350
+	0    1    1    0   
+$EndComp
+$Comp
+L library:IPA040N06N Q?
+U 1 1 615156A7
+P 5850 1350
+F 0 "Q?" H 6054 1396 50  0000 L CNN
+F 1 "IPA040N06N" H 6054 1305 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:TO-263-6" H 6050 1275 50  0001 L CIN
+F 3 "https://www.infineon.com/dgdl/Infineon-IPB180N10S4_02-DS-v01_00-en.pdf?fileId=db3a30433d1d0bbe013d2129cf8a2f88" V 5850 1350 50  0001 L CNN
+	1    5850 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 1150 5650 1350
+Wire Wire Line
+	4300 1350 4500 1350
+Wire Wire Line
+	4500 1350 4500 1150
+Wire Wire Line
+	3200 3900 3750 3900
+Wire Wire Line
+	3750 3900 3750 1650
+Wire Wire Line
+	3200 4200 3800 4200
+Wire Wire Line
+	3800 4200 3800 2350
+Wire Wire Line
+	3200 4300 3850 4300
+Wire Wire Line
+	3850 4300 3850 3050
+Wire Wire Line
+	3200 4400 3900 4400
+Wire Wire Line
+	3900 4400 3900 3700
+Wire Wire Line
+	3350 5600 3350 1350
+Wire Wire Line
+	3350 1350 4000 1350
+Connection ~ 3350 5600
+Wire Wire Line
+	3350 5600 2050 5600
+Wire Wire Line
+	3400 5600 3400 2050
+Wire Wire Line
+	3400 2050 4000 2050
+Connection ~ 3400 5600
+Wire Wire Line
+	3400 5600 3350 5600
+Wire Wire Line
+	3450 5600 3450 2750
+Wire Wire Line
+	3450 2750 4000 2750
+Connection ~ 3450 5600
+Wire Wire Line
+	3450 5600 3400 5600
+Wire Wire Line
+	3500 5600 3500 3400
+Wire Wire Line
+	3500 3400 4000 3400
+Connection ~ 3500 5600
+Wire Wire Line
+	3500 5600 3450 5600
+Wire Wire Line
+	3550 5600 3550 4100
+Wire Wire Line
+	3550 4100 4000 4100
+Connection ~ 3550 5600
+Wire Wire Line
+	3550 5600 3500 5600
+Wire Wire Line
+	5950 1150 7250 1150
+Wire Wire Line
+	7250 1150 7250 3850
+Wire Wire Line
+	5950 1850 7200 1850
+Wire Wire Line
+	7200 1850 7200 3950
+Wire Wire Line
+	7200 3950 7250 3950
+Wire Wire Line
+	5950 2550 7150 2550
+Wire Wire Line
+	7150 2550 7150 4050
+Wire Wire Line
+	7150 4050 7250 4050
+Wire Wire Line
+	5950 3200 7100 3200
+Wire Wire Line
+	7100 3200 7100 4150
+Wire Wire Line
+	7100 4150 7250 4150
+Wire Wire Line
+	5950 3900 7050 3900
+Wire Wire Line
+	7050 3900 7050 4250
+Wire Wire Line
+	7050 4250 7250 4250
+Wire Wire Line
+	6500 5600 6500 1550
+Wire Wire Line
+	6500 1550 5950 1550
+Connection ~ 6500 5600
+Wire Wire Line
+	6500 5600 6550 5600
+Wire Wire Line
+	6450 5600 6450 2250
+Wire Wire Line
+	6450 2250 5950 2250
+Connection ~ 6450 5600
+Wire Wire Line
+	6450 5600 6500 5600
+Wire Wire Line
+	6400 5600 6400 2950
+Wire Wire Line
+	6400 2950 5950 2950
+Connection ~ 6400 5600
+Wire Wire Line
+	6400 5600 6450 5600
+Wire Wire Line
+	6350 5600 6350 3600
+Wire Wire Line
+	6350 3600 5950 3600
+Connection ~ 6350 5600
+Wire Wire Line
+	6350 5600 6400 5600
+Wire Wire Line
+	6300 5600 6300 4300
+Wire Wire Line
+	6300 4300 5950 4300
+Connection ~ 6300 5600
+Wire Wire Line
+	6300 5600 6350 5600
+Wire Wire Line
+	3200 4500 5250 4500
+Wire Wire Line
+	5250 4500 5250 4100
+Wire Wire Line
+	3900 3700 5250 3700
+Wire Wire Line
+	5250 3700 5250 3400
+Wire Wire Line
+	3850 3050 5250 3050
+Wire Wire Line
+	5250 3050 5250 2750
+Wire Wire Line
+	3800 2350 5250 2350
+Wire Wire Line
+	5250 2350 5250 2050
+Connection ~ 4950 3900
+Wire Wire Line
+	4500 3900 4950 3900
+Wire Wire Line
+	4950 3900 5650 3900
+$Comp
+L Transistor_BJT:2N3904 Q?
+U 1 1 61500FC8
+P 5050 4100
+F 0 "Q?" H 5241 4054 50  0000 L CNN
+F 1 "2N3904" H 5241 4145 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 5250 4025 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/2N3903-D.PDF" H 5050 4100 50  0001 L CNN
+	1    5050 4100
+	-1   0    0    1   
+$EndComp
+Connection ~ 4950 3200
+Wire Wire Line
+	4500 3200 4950 3200
+Wire Wire Line
+	4950 3200 5650 3200
+$Comp
+L Transistor_BJT:2N3904 Q?
+U 1 1 61500FEC
+P 5050 3400
+F 0 "Q?" H 5241 3354 50  0000 L CNN
+F 1 "2N3904" H 5241 3445 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 5250 3325 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/2N3903-D.PDF" H 5050 3400 50  0001 L CNN
+	1    5050 3400
+	-1   0    0    1   
+$EndComp
+Connection ~ 4950 2550
+Wire Wire Line
+	4500 2550 4950 2550
+Wire Wire Line
+	4950 2550 5650 2550
+$Comp
+L Transistor_BJT:2N3904 Q?
+U 1 1 614A92E3
+P 5050 2750
+F 0 "Q?" H 5241 2704 50  0000 L CNN
+F 1 "2N3904" H 5241 2795 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 5250 2675 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/2N3903-D.PDF" H 5050 2750 50  0001 L CNN
+	1    5050 2750
+	-1   0    0    1   
+$EndComp
+Connection ~ 4950 1850
+Wire Wire Line
+	4500 1850 4950 1850
+Wire Wire Line
+	4950 1850 5650 1850
+$Comp
+L Transistor_BJT:2N3904 Q?
+U 1 1 614F575F
+P 5050 2050
+F 0 "Q?" H 5241 2004 50  0000 L CNN
+F 1 "2N3904" H 5241 2095 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 5250 1975 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/2N3903-D.PDF" H 5050 2050 50  0001 L CNN
+	1    5050 2050
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3750 1650 5250 1650
+Wire Wire Line
+	5250 1650 5250 1350
+Connection ~ 4950 1150
+Wire Wire Line
+	4500 1150 4950 1150
+Wire Wire Line
+	4950 1150 5650 1150
+$Comp
+L Transistor_BJT:2N3904 Q?
+U 1 1 6151569D
+P 5050 1350
+F 0 "Q?" H 5241 1304 50  0000 L CNN
+F 1 "2N3904" H 5241 1395 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 5250 1275 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/2N3903-D.PDF" H 5050 1350 50  0001 L CNN
+	1    5050 1350
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5950 1550 4950 1550
+Connection ~ 5950 1550
+Wire Wire Line
+	5950 2250 4950 2250
+Connection ~ 5950 2250
+Wire Wire Line
+	5950 2950 5950 3200
+Connection ~ 5950 2950
+Connection ~ 5950 3600
+Connection ~ 5950 3200
+Wire Wire Line
+	5950 3200 5950 3600
+Wire Wire Line
+	4950 3600 5950 3600
+Wire Wire Line
+	5950 4300 4950 4300
+Connection ~ 5950 4300
+$EndSCHEMATC
