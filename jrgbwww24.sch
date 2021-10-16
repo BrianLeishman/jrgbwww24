@@ -44,7 +44,7 @@ F 1 "0.33u" H 2435 1945 50  0000 R CNN
 F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" H 2588 1750 50  0001 C CNN
 F 3 "~" H 2550 1900 50  0001 C CNN
 	1    2550 1900
-	-1   0    0    1   
+	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R R1
@@ -73,7 +73,7 @@ L Device:LED D1
 U 1 1 6167FDF4
 P 7800 5700
 F 0 "D1" H 7800 5550 50  0000 C CNN
-F 1 "RED - ALWAY ON" H 7950 5850 50  0000 C CNN
+F 1 "RED - ALWAYS ON" H 7950 5850 50  0000 C CNN
 F 2 "LED_SMD:LED_1206_3216Metric" H 7800 5700 50  0001 C CNN
 F 3 "~" H 7800 5700 50  0001 C CNN
 	1    7800 5700
@@ -89,19 +89,19 @@ Wire Wire Line
 $Comp
 L Transistor_BJT:2N3904 Q1
 U 1 1 6151569D
-P 4600 2750
-F 0 "Q1" H 4791 2704 50  0000 L CNN
-F 1 "2N3904" H 4791 2795 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-92_Inline" H 4800 2675 50  0001 L CIN
-F 3 "https://www.onsemi.com/pub/Collateral/2N3903-D.PDF" H 4600 2750 50  0001 L CNN
-	1    4600 2750
-	1    0    0    -1  
+P 4800 2750
+F 0 "Q1" H 4991 2704 50  0000 L CNN
+F 1 "2N3904" H 4991 2795 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 5000 2675 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/2N3903-D.PDF" H 4800 2750 50  0001 L CNN
+	1    4800 2750
+	-1   0    0    1   
 $EndComp
 Wire Wire Line
 	4300 2750 4400 2750
 Text Label 3200 3250 0    50   ~ 0
 R_SIGNAL
-Text Label 4300 2750 2    50   ~ 0
+Text Label 4400 3250 2    50   ~ 0
 R_SIGNAL
 Text Label 3200 3350 0    50   ~ 0
 G_SIGNAL
@@ -158,10 +158,10 @@ NoConn ~ 2300 1700
 Wire Wire Line
 	4700 2950 4700 3050
 $Comp
-L library:IPA040N06N Q4
+L library:IPA040N06N Q6
 U 1 1 615156A7
 P 5400 2500
-F 0 "Q4" H 5604 2546 50  0000 L CNN
+F 0 "Q6" H 5604 2546 50  0000 L CNN
 F 1 "IPA040N06N" H 5600 2350 50  0000 L CNN
 F 2 "Package_TO_SOT_THT:TO-220F-3_Vertical" H 5600 2425 50  0001 L CIN
 F 3 "https://www.infineon.com/dgdl/Infineon-IPB180N10S4_02-DS-v01_00-en.pdf?fileId=db3a30433d1d0bbe013d2129cf8a2f88" V 5400 2500 50  0001 L CNN
@@ -239,30 +239,17 @@ Wire Wire Line
 Connection ~ 4700 4000
 Wire Wire Line
 	5500 4200 5500 4550
-$Comp
-L Transistor_BJT:2N3904 Q2
-U 1 1 619CDCF5
-P 4600 4250
-F 0 "Q2" H 4791 4204 50  0000 L CNN
-F 1 "2N3904" H 4791 4295 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-92_Inline" H 4800 4175 50  0001 L CIN
-F 3 "https://www.onsemi.com/pub/Collateral/2N3903-D.PDF" H 4600 4250 50  0001 L CNN
-	1    4600 4250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4300 4250 4400 4250
-Text Label 4300 4250 2    50   ~ 0
+Text Label 4300 4650 2    50   ~ 0
 G_SIGNAL
 Text Label 5850 3700 0    50   ~ 0
 G_GND
 Wire Wire Line
 	4700 4000 5200 4000
 $Comp
-L library:IPA040N06N Q5
+L library:IPA040N06N Q7
 U 1 1 619CDD0E
 P 5400 4000
-F 0 "Q5" H 5604 4046 50  0000 L CNN
+F 0 "Q7" H 5604 4046 50  0000 L CNN
 F 1 "IPA040N06N" H 5600 3850 50  0000 L CNN
 F 2 "Package_TO_SOT_THT:TO-220F-3_Vertical" H 5600 3925 50  0001 L CIN
 F 3 "https://www.infineon.com/dgdl/Infineon-IPB180N10S4_02-DS-v01_00-en.pdf?fileId=db3a30433d1d0bbe013d2129cf8a2f88" V 5400 4000 50  0001 L CNN
@@ -294,17 +281,17 @@ Wire Wire Line
 $Comp
 L Transistor_BJT:2N3904 Q3
 U 1 1 61A5D465
-P 4600 5700
-F 0 "Q3" H 4791 5654 50  0000 L CNN
-F 1 "2N3904" H 4791 5745 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-92_Inline" H 4800 5625 50  0001 L CIN
-F 3 "https://www.onsemi.com/pub/Collateral/2N3903-D.PDF" H 4600 5700 50  0001 L CNN
-	1    4600 5700
-	1    0    0    -1  
+P 4800 5700
+F 0 "Q3" H 4991 5654 50  0000 L CNN
+F 1 "2N3904" H 4991 5745 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 5000 5625 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/2N3903-D.PDF" H 4800 5700 50  0001 L CNN
+	1    4800 5700
+	-1   0    0    1   
 $EndComp
 Wire Wire Line
 	4300 5700 4400 5700
-Text Label 4300 5700 2    50   ~ 0
+Text Label 4400 6200 2    50   ~ 0
 B_SIGNAL
 Text Label 5850 5150 0    50   ~ 0
 B_GND
@@ -313,10 +300,10 @@ Wire Wire Line
 Wire Wire Line
 	4700 5900 4700 6000
 $Comp
-L library:IPA040N06N Q6
+L library:IPA040N06N Q8
 U 1 1 61A5D47E
 P 5400 5450
-F 0 "Q6" H 5604 5496 50  0000 L CNN
+F 0 "Q8" H 5604 5496 50  0000 L CNN
 F 1 "IPA040N06N" H 5600 5300 50  0000 L CNN
 F 2 "Package_TO_SOT_THT:TO-220F-3_Vertical" H 5600 5375 50  0001 L CIN
 F 3 "https://www.infineon.com/dgdl/Infineon-IPB180N10S4_02-DS-v01_00-en.pdf?fileId=db3a30433d1d0bbe013d2129cf8a2f88" V 5400 5450 50  0001 L CNN
@@ -346,19 +333,19 @@ Connection ~ 7400 2450
 Wire Wire Line
 	8200 2650 8200 3000
 $Comp
-L Transistor_BJT:2N3904 Q7
+L Transistor_BJT:2N3904 Q4
 U 1 1 61A5D4AC
-P 7300 2700
-F 0 "Q7" H 7491 2654 50  0000 L CNN
-F 1 "2N3904" H 7491 2745 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-92_Inline" H 7500 2625 50  0001 L CIN
-F 3 "https://www.onsemi.com/pub/Collateral/2N3903-D.PDF" H 7300 2700 50  0001 L CNN
-	1    7300 2700
-	1    0    0    -1  
+P 7500 2700
+F 0 "Q4" H 7691 2654 50  0000 L CNN
+F 1 "2N3904" H 7691 2745 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 7700 2625 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/2N3903-D.PDF" H 7500 2700 50  0001 L CNN
+	1    7500 2700
+	-1   0    0    1   
 $EndComp
 Wire Wire Line
 	7000 2700 7100 2700
-Text Label 7000 2700 2    50   ~ 0
+Text Label 7100 3200 2    50   ~ 0
 CW_SIGNAL
 Text Label 8550 2150 0    50   ~ 0
 CW_GND
@@ -400,19 +387,19 @@ Connection ~ 7400 3950
 Wire Wire Line
 	8200 4150 8200 4500
 $Comp
-L Transistor_BJT:2N3904 Q8
+L Transistor_BJT:2N3904 Q5
 U 1 1 61A71ED6
-P 7300 4200
-F 0 "Q8" H 7491 4154 50  0000 L CNN
-F 1 "2N3904" H 7491 4245 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-92_Inline" H 7500 4125 50  0001 L CIN
-F 3 "https://www.onsemi.com/pub/Collateral/2N3903-D.PDF" H 7300 4200 50  0001 L CNN
-	1    7300 4200
-	1    0    0    -1  
+P 7500 4200
+F 0 "Q5" H 7691 4154 50  0000 L CNN
+F 1 "2N3904" H 7691 4245 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 7700 4125 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/2N3903-D.PDF" H 7500 4200 50  0001 L CNN
+	1    7500 4200
+	-1   0    0    1   
 $EndComp
 Wire Wire Line
 	7000 4200 7100 4200
-Text Label 7000 4200 2    50   ~ 0
+Text Label 7100 4700 2    50   ~ 0
 WW_SIGNAL
 Text Label 8550 3650 0    50   ~ 0
 WW_GND
@@ -440,7 +427,7 @@ L Device:LED D2
 U 1 1 61C0C8C9
 P 8500 5700
 F 0 "D2" H 8500 5550 50  0000 C CNN
-F 1 "YELLOW - 5V" H 8650 5850 50  0000 C CNN
+F 1 "GREEN - 5V" H 8650 5850 50  0000 C CNN
 F 2 "LED_SMD:LED_1206_3216Metric" H 8500 5700 50  0001 C CNN
 F 3 "~" H 8500 5700 50  0001 C CNN
 	1    8500 5700
@@ -451,7 +438,7 @@ L Device:R R7
 U 1 1 61C0CBD7
 P 8500 5400
 F 0 "R7" V 8293 5400 50  0000 C CNN
-F 1 "125" V 8384 5400 50  0000 C CNN
+F 1 "100" V 8384 5400 50  0000 C CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 8430 5400 50  0001 C CNN
 F 3 "~" H 8500 5400 50  0001 C CNN
 	1    8500 5400
@@ -838,14 +825,45 @@ F 3 "" H 1800 1400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:VDD #PWR?
+L power:VDD #PWR0102
 U 1 1 6170ACFF
 P 7800 5100
-F 0 "#PWR?" H 7800 4950 50  0001 C CNN
+F 0 "#PWR0102" H 7800 4950 50  0001 C CNN
 F 1 "VDD" H 7815 5273 50  0000 C CNN
 F 2 "" H 7800 5100 50  0001 C CNN
 F 3 "" H 7800 5100 50  0001 C CNN
 	1    7800 5100
 	1    0    0    -1  
 $EndComp
+$Comp
+L Transistor_BJT:2N3904 Q2
+U 1 1 619CDCF5
+P 4800 4250
+F 0 "Q2" H 4991 4204 50  0000 L CNN
+F 1 "2N3904" H 4991 4295 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 5000 4175 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/2N3903-D.PDF" H 4800 4250 50  0001 L CNN
+	1    4800 4250
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5000 4250 5000 4650
+Wire Wire Line
+	5000 4650 4300 4650
+Wire Wire Line
+	5000 2750 5000 3250
+Wire Wire Line
+	5000 3250 4400 3250
+Wire Wire Line
+	7700 2700 7700 3200
+Wire Wire Line
+	7700 3200 7100 3200
+Wire Wire Line
+	7700 4200 7700 4700
+Wire Wire Line
+	7700 4700 7100 4700
+Wire Wire Line
+	5000 5700 5000 6200
+Wire Wire Line
+	5000 6200 4400 6200
 $EndSCHEMATC

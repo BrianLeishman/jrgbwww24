@@ -1,4 +1,4 @@
-update=Wed 06 Oct 2021 09:02:34 PM EDT
+update=Fri 15 Oct 2021 09:24:49 PM EDT
 version=1
 last_client=kicad
 [general]
@@ -25,7 +25,7 @@ ERC_TestSimilarLabels=1
 [pcbnew]
 version=1
 PageLayoutDescrFile=
-LastNetListRead=
+LastNetListRead=jrgbwww24.net
 CopperLayerCount=2
 BoardThickness=1.6
 AllowMicroVias=0
