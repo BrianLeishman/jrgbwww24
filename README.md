@@ -1,3 +1,3 @@
-![Front](screenshots/front.png)
+![Front](images/renders/front.png)
 
-![Back](screenshots/back.png)
+![Back](images/renders/back.png)
