@@ -710,12 +710,12 @@ Wire Wire Line
 $Comp
 L power:+5V #5V0101
 U 1 1 61923651
-P 5250 1100
-F 0 "#5V0101" H 5250 950 50  0001 C CNN
-F 1 "+5V" H 5265 1273 50  0000 C CNN
-F 2 "" H 5250 1100 50  0001 C CNN
-F 3 "" H 5250 1100 50  0001 C CNN
-	1    5250 1100
+P 4700 1100
+F 0 "#5V0101" H 4700 950 50  0001 C CNN
+F 1 "+5V" H 4715 1273 50  0000 C CNN
+F 2 "" H 4700 1100 50  0001 C CNN
+F 3 "" H 4700 1100 50  0001 C CNN
+	1    4700 1100
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -816,40 +816,7 @@ Wire Wire Line
 	2500 1550 2500 1800
 Wire Wire Line
 	4000 1800 4000 1550
-$Comp
-L Device:R R9
-U 1 1 6196CF2A
-P 4550 1250
-F 0 "R9" H 4620 1296 50  0000 L CNN
-F 1 "6.12k" H 4620 1205 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 4480 1250 50  0001 C CNN
-F 3 "~" H 4550 1250 50  0001 C CNN
-	1    4550 1250
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R10
-U 1 1 6196EC16
-P 4550 1650
-F 0 "R10" H 4620 1696 50  0000 L CNN
-F 1 "2k" H 4620 1605 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 4480 1650 50  0001 C CNN
-F 3 "~" H 4550 1650 50  0001 C CNN
-	1    4550 1650
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4550 1400 4550 1450
-Wire Wire Line
-	4550 1450 4400 1450
-Wire Wire Line
-	4400 1450 4400 900 
-Connection ~ 4550 1450
-Wire Wire Line
-	4550 1450 4550 1500
-Connection ~ 4550 1100
-Wire Wire Line
-	4550 1100 5250 1100
+Connection ~ 4150 1100
 Wire Wire Line
 	4000 1250 4000 1100
 Connection ~ 4000 1100
@@ -879,17 +846,6 @@ Wire Wire Line
 	3400 1100 3450 1100
 Wire Wire Line
 	3400 1600 3400 1800
-$Comp
-L power:Earth #PWR0103
-U 1 1 619FB77A
-P 4550 1800
-F 0 "#PWR0103" H 4550 1550 50  0001 C CNN
-F 1 "Earth" H 4550 1650 50  0001 C CNN
-F 2 "" H 4550 1800 50  0001 C CNN
-F 3 "~" H 4550 1800 50  0001 C CNN
-	1    4550 1800
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:Earth #PWR0104
 U 1 1 619FC463
@@ -957,9 +913,9 @@ F 3 "~" H 3400 1450 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	3200 900  4400 900 
+	3200 900  4150 900 
 Wire Wire Line
-	4000 1100 4550 1100
+	4000 1100 4150 1100
 Text Label 4300 4700 2    50   ~ 0
 G_SIGNAL
 $Comp
@@ -996,4 +952,8 @@ F 3 "~" H 7900 1400 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 NoConn ~ 8100 1400
+Wire Wire Line
+	4150 1100 4150 900 
+Wire Wire Line
+	4150 1100 4700 1100
 $EndSCHEMATC
